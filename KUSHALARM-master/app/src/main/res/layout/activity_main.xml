@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4dea5a"
+    tools:context="com.example.amit.alarm.MainActivity">
+
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timepicker"
+        android:timePickerMode="clock"
+        >
+
+    </TimePicker>
+    <EditText
+        android:id="@+id/sec"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outputline"
+        android:hint="Enter the Phone number">
+    </EditText>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_height="wrap_content"
+            android:text="Alarm"
+            android:onClick="alarm"/>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_shape"
+            android:text="Stop"
+            android:onClick="stop"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:text="check"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
